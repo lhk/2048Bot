@@ -50,7 +50,6 @@ namespace _2048Bot
         //undo the last move
         public void revert()
         {
-            // this should create a deep clone. seems dangerous to me but stackoverflow recommends it
             board = backup_board.Pop();
             score = backup_score.Pop();
         }
